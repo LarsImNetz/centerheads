@@ -1,17 +1,29 @@
-!create centered heads
+# create centered heads
 
+## Requirements
 You need a "runable" facedetect from https://github.com/wavexx/facedetect.git
 
-Simple copy the facedetect into this directory
+### Ubuntu
+facedetect need opencv to work, to install opencv in ubuntu: follow this really good guide: http://www.pyimagesearch.com/2016/10/24/ubuntu-16-04-how-to-install-opencv/
 
-Within Gentoo, patch facedetect by change
+### Gentoo
+Build opencv with: emerge opencv
 
- -DATA_DIR = '/usr/share/opencv/'
- +DATA_DIR = '/usr/share/OpenCV/'
+After emerge, patch the facedetect script by change
 
-copy your files into pics directory.
+    -DATA_DIR = '/usr/share/opencv/'
+    +DATA_DIR = '/usr/share/OpenCV/'
 
-run centerheads.sh
 
-You will find centered heads in this directory.
+After this, simple copy the facedetect into this directory
 
+## run centerheads
+Copy your images with faces into the pics folder.
+
+    # centerheads.sh
+
+You will find your images with centered heads in this directory.
+
+This is just a proof of concept.
+
+No guarantee that it works as you expect.
