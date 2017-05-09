@@ -29,16 +29,22 @@ if ($#ARGV < 0) {
     print("No parameter given, assume '.'\n");
     exit(1);
 }
+# print "echo $#ARGV\n";
 
 my $x = $ARGV[0];
 my $y = $ARGV[1];
 
+print "Start position: $x,$y";
+
 my $w = $ARGV[2];
 my $h = $ARGV[3];
 
-my $picname = $ARGV[4];
+print " size: $w,$h";
 
-if ( ! -e $picname ) {
+my $picname = $ARGV[4];
+print " picture: $picname\n";
+
+if ( ! -e "$picname" ) {
     print "Das Bild $picname konnte nicht gefunden werden!\n";
     exit(1);
 }
@@ -48,10 +54,17 @@ my $picbasename_no_extension;
 my $extension;
 ($picbasename_no_extension, $extension) = splitExtension($picbasename);
 
-my $error = 0;
 my $percent = 80;
+my $outfile = "output_${picbasename_no_extension}_${percent}.jpg";
+
+if ( -e "$outfile" ) {
+    print "Picture already exists.";
+    exit(0);
+}
+
+my $error = 0;
 do {
-    my $outfile = "output_${picbasename_no_extension}_${percent}.jpg";
+    $outfile = "output_${picbasename_no_extension}_${percent}.jpg";
 
     my $identify = "identify $picname";
     system($identify);
@@ -93,18 +106,18 @@ sub createImage($$$$$$$) {
     }
     print "\n";
 
-    if ($error == 0) {
-        my $geom = "${neww}x${newh}";
-        my $mid=int($neww / 2);
-        $command = "convert -size $geom xc:none -stroke black -fill black -draw \"circle $mid,$mid $mid,3\" bigcircle.png";
-        system($command);
-        $command = "convert bigcircle.png -alpha extract mask.png";
-        system($command);
-        $command = "convert $outfile mask.png -compose CopyOpacity -composite -stroke black -strokewidth 3 -fill none -draw \"circle $mid,$mid $mid,3\" ${outfile}.png";
-        system($command);
-        $command = "convert $outfile mask.png -compose CopyOpacity -composite -stroke black -strokewidth 3 -fill none -draw \"circle $mid,$mid $mid,3\" -background white -alpha remove $outfile";
-        system($command);
-    }
+#     if ($error == 0) {
+#         my $geom = "${neww}x${newh}";
+#         my $mid=int($neww / 2);
+#         $command = "convert -size $geom xc:none -stroke black -fill black -draw \"circle $mid,$mid $mid,3\" bigcircle.png";
+#         system($command);
+#         $command = "convert bigcircle.png -alpha extract mask.png";
+#         system($command);
+#         $command = "convert $outfile mask.png -compose CopyOpacity -composite -stroke black -strokewidth 3 -fill none -draw \"circle $mid,$mid $mid,3\" ${outfile}.png";
+#         system($command);
+#         $command = "convert $outfile mask.png -compose CopyOpacity -composite -stroke black -strokewidth 3 -fill none -draw \"circle $mid,$mid $mid,3\" -background white -alpha remove $outfile";
+#         system($command);
+#     }
     return $error;
 }
 
