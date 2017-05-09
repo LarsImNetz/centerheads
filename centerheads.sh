@@ -7,31 +7,23 @@ PICS=$(find pics -iname '*.jpg')
 
 for PIC in $PICS; do
     echo "try to transform: $PIC"
-#    oIFS="$IFS"
-#    IFS=$'\n'
-    FACE_DIMENSION=$(./facedetect $PIC)
-    if [ -n "$FACE_DIMENSION" ]; then
-        ./transform.pl $FACE_DIMENSION $PIC
-    else
-        echo "ERROR: can't identify face on: $PIC"
-    fi
-       
-#     for A in $FACE_DIMENSION; do
-#         echo "Face: $A"
-#         o2IFS="$IFS"
-#         IFS="$oIFS"
-#         
-#         IFS="$o2IFS"
-#     done
+
+    i=$#PIC
+    facedetect "$PIC" | while read x y w h; do
+        echo "work on: $i really on $PIC"
+        # convert "$file" -crop ${w}x${h}+${x}+${y} "path/to/faces/${name%.*}_${i}.${name##*.}"
+        ./transform.pl $x $y $w $h $PIC
+        i=$(($i-1))
+    done  
 done
 
-echo "Resize pictures..."
-for PIC in $PICS; do
-    echo "resize: $PIC"
-    BASENAME=$(basename $PIC)
-
-    EXTENSION=${BASENAME#*.}
-    PNGNAME="${BASENAME/.${EXTENSION}/.png}"
-
-    convert $PIC -resize 260x270 -fuzz 2% -transparent white $PNGNAME
-done
+# echo "Resize pictures..."
+# for PIC in $PICS; do
+#     echo "resize: $PIC"
+#     BASENAME=$(basename $PIC)
+# 
+#     EXTENSION=${BASENAME#*.}
+#     PNGNAME="${BASENAME/.${EXTENSION}/.png}"
+# 
+#     convert $PIC -resize 260x270 -fuzz 2% -transparent white $PNGNAME
+# done
