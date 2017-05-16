@@ -54,17 +54,17 @@ my $picbasename_no_extension;
 my $extension;
 ($picbasename_no_extension, $extension) = splitExtension($picbasename);
 
-my $percent = 80;
-my $outfile = "output_${picbasename_no_extension}_${percent}.jpg";
+my $percent = 90;
+my $outfile = "${picbasename_no_extension}_${percent}.png";
 
 if ( -e "$outfile" ) {
-    print "Picture already exists.";
+    print "Picture already exists.\n";
     exit(0);
 }
 
 my $error = 0;
 do {
-    $outfile = "output_${picbasename_no_extension}_${percent}.jpg";
+    $outfile = "${picbasename_no_extension}_${percent}.png";
 
     my $identify = "identify $picname";
     system($identify);
@@ -96,8 +96,7 @@ sub createImage($$$$$$$) {
     
     my $geometry = "${neww}x${newh}+${newx}+${newy}";
 
-    my $command = "jpegtran -trim -crop $geometry -copy none -outfile $outfile $source";
-    
+    my $command = "convert $source -crop $geometry +repage $outfile";
     print $command . "\n";
     system($command);
     my $error = errorAdaption($?);
@@ -106,18 +105,6 @@ sub createImage($$$$$$$) {
     }
     print "\n";
 
-#     if ($error == 0) {
-#         my $geom = "${neww}x${newh}";
-#         my $mid=int($neww / 2);
-#         $command = "convert -size $geom xc:none -stroke black -fill black -draw \"circle $mid,$mid $mid,3\" bigcircle.png";
-#         system($command);
-#         $command = "convert bigcircle.png -alpha extract mask.png";
-#         system($command);
-#         $command = "convert $outfile mask.png -compose CopyOpacity -composite -stroke black -strokewidth 3 -fill none -draw \"circle $mid,$mid $mid,3\" ${outfile}.png";
-#         system($command);
-#         $command = "convert $outfile mask.png -compose CopyOpacity -composite -stroke black -strokewidth 3 -fill none -draw \"circle $mid,$mid $mid,3\" -background white -alpha remove $outfile";
-#         system($command);
-#     }
     return $error;
 }
 
