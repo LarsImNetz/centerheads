@@ -1,7 +1,9 @@
 #!/bin/bash
 
 echo "Search for all png files..."
-PICS=$(find pics -maxdepth 1 -iname '*.png')
+PICS=$(find new-profiles -maxdepth 2 -iname '*.png')
+
+mkdir -p bigger
 
 for PIC in $PICS; do
     echo "convert to bigger: $PIC"
@@ -9,6 +11,11 @@ for PIC in $PICS; do
 
     EXTENSION=${BASENAME#*.}
     PNGNAME="${BASENAME/.${EXTENSION}/_bigger.png}"
-  
-    convert $PIC -background transparent -gravity center -extent 600x600 pics/$PNGNAME
+    read x y <<< $(identify -format '%w %h' $PIC)
+    echo "width: ${x} height: ${y}"
+    newx=$(( $x * 3 / 2))
+    newy=$(( $y * 3 / 2))
+    newgeometry="${newx}x${newy}"
+    echo "new geometry: $newgeometry"
+    convert $PIC -background transparent -gravity center -extent $newgeometry bigger/$PNGNAME
 done
