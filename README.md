@@ -9,13 +9,13 @@ facedetect need opencv to work, to install opencv in ubuntu: follow this really 
 ### Gentoo
 Build opencv with: emerge opencv
 
-After emerge, patch the facedetect script by change
+Copy facedetect into this directory.
+
+Patch this facedetect script by change
 
     -DATA_DIR = '/usr/share/opencv/'
     +DATA_DIR = '/usr/share/OpenCV/'
 
-
-After this, simple copy the facedetect into this directory
 
 ## run centerheads
 Copy your images with faces into the pics folder.
