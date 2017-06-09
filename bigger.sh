@@ -13,8 +13,8 @@ for PIC in $PICS; do
     PNGNAME="${BASENAME/.${EXTENSION}/_bigger.png}"
     read x y <<< $(identify -format '%w %h' $PIC)
     echo "width: ${x} height: ${y}"
-    newx=$(( $x * 3 / 2))
-    newy=$(( $y * 3 / 2))
+    newx=$(( $x * 2))
+    newy=$(( $y * 2))
     newgeometry="${newx}x${newy}"
     echo "new geometry: $newgeometry"
     convert $PIC -background transparent -gravity center -extent $newgeometry bigger/$PNGNAME
