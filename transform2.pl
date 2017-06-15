@@ -119,6 +119,12 @@ sub createImage($$$$$$$) {
     $newx = int($newx);
     $newy = int($newy);
     
+    # Wenn unten etwas fehlt, einfach etwas nach oben schieben
+    if ($newy + $newh > $fully) {
+        my $deltay = $newy + $newh - $fully;
+        print "deltay:=$deltay";
+        $newy = $newy - $deltay;
+    }
 #     if ($newx < 0) {
 #         $newx = 0;
 #     }
