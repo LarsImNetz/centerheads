@@ -1,3 +1,7 @@
+# new-profiles/Beraterbilder/boesebeck-juergen_l.png GEOM 5184 3456 FACE 2555 1061 385 385
+# new-profiles/Beraterbilder/perini-siegfried_l.png GEOM 3543 2362 FACE 1599 522 644 644
+# new-profiles/Beraterbilder/biegel-dirk_l.png NO-FACE fail with error: 2
+# new-profiles/Beraterbilder/ferchow-carola_l.png NO-FACE fail with error: 2
 # new-profiles/Beraterbilder/eichstaedter-max_l.png NO-FACE fail with error: 2
 # new-profiles/Beraterbilder/erens-daniel_l.png NO-FACE fail with error: 2
 # new-profiles/Beraterbilder/finke-clemens_l.png NO-FACE fail with error: 2
@@ -67,7 +71,6 @@ new-profiles/Beraterbilder/boeck-detlef_l.png GEOM 4331 2883 FACE 1548 380 1185 
 new-profiles/Beraterbilder/boehm-arndt_l.png GEOM 1063 768 FACE 350 156 307 307
 new-profiles/Beraterbilder/boehm-daniela_l.png GEOM 1920 1280 FACE 690 325 531 531
 new-profiles/Beraterbilder/boehmke-wolfgang_l.png GEOM 2592 1728 FACE 1140 309 443 443
-# new-profiles/Beraterbilder/boesebeck-juergen_l.png GEOM 5184 3456 FACE 2555 1061 385 385
 new-profiles/Beraterbilder/bohm-henning_l.png GEOM 5184 3456 FACE 2250 703 1049 1049
 new-profiles/Beraterbilder/bosch-frank_l.png GEOM 5114 3408 FACE 2029 693 1260 1260
 new-profiles/Beraterbilder/bosold-lothar_l.png GEOM 3888 2592 FACE 1610 303 880 880
@@ -405,7 +408,6 @@ new-profiles/Beraterbilder/paetzold-irene_l.png GEOM 4928 3280 FACE 1991 790 119
 new-profiles/Beraterbilder/pardon-pierre-_l.png GEOM 5760 3840 FACE 2330 836 1167 1167
 new-profiles/Beraterbilder/pautsch-katharina_l.png GEOM 3307 2362 FACE 1422 371 930 930
 new-profiles/Beraterbilder/peinelt-monique_l.png GEOM 3744 5616 FACE 1642 850 980 980
-# new-profiles/Beraterbilder/perini-siegfried_l.png GEOM 3543 2362 FACE 1599 522 644 644
 new-profiles/Beraterbilder/petri-alexander_l.png GEOM 5600 3708 FACE 2027 736 1460 1460
 new-profiles/Beraterbilder/pfander-bernd_l.png GEOM 4256 2832 FACE 1740 787 833 833
 new-profiles/Beraterbilder/pflaum-alexander_l.png GEOM 3000 2005 FACE 1181 326 813 813
@@ -631,10 +633,8 @@ new-profiles/Beraterbilder/schnarr-wolfgang_l.png GEOM 2555 1704 FACE 978 279 54
 new-profiles/Beraterbilder/todorovic-zlatko_l.png GEOM 3543 2598 FACE 1373 761 907 907
 new-profiles/Beraterbilder/sommerhoff-daniela_l.png GEOM 2480 1795 FACE 1058 208 530 530
 new-profiles/Beraterbilder/vogt-holger_l.png GEOM 1800 1081 FACE 615 157 385 385
-# new-profiles/Beraterbilder/biegel-dirk_l.png NO-FACE fail with error: 2
 new-profiles/Beraterbilder/offermann-klaus_l.png GEOM 3000 2000 FACE 1286 263 610 610
 new-profiles/Beraterbilder/schoeler-rene_l.png GEOM 4505 3003 FACE 1844 703 734 734
-# new-profiles/Beraterbilder/ferchow-carola_l.png NO-FACE fail with error: 2
 new-profiles/Beraterbilder/ries-michael_l.png GEOM 2303 1535 FACE 889 215 618 618
 new-profiles/Beraterbilder/schulte-mathias_l.png GEOM 3456 2304 FACE 1326 516 807 807
 new-profiles/Beraterbilder/kettling-walter_l.png GEOM 7360 4912 FACE 3741 1381 1574 1574
