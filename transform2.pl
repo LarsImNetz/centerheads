@@ -26,7 +26,7 @@ if ($help) {
 }
 
 if ($#ARGV < 0) {
-    print("No parameter given, must quit\n");
+    print("No parameter to check-file.txt given, must quit\n");
     exit(1);
 }
 # print "echo $#ARGV\n";
@@ -108,25 +108,36 @@ sub createImage($$$$$$$) {
     $newx = int($newx);
     $newy = int($newy);
     
+#     if ($newx < 0) {
+#         $newx = 0;
+#     }
+#     if ($newy < 0) {
+#         $newy = 0;
+#     }
+# 
+#     if ($newx + $neww > $fullx) {
+#         $neww = $fullx - $newx - 1;
+#         print "WARNING: too wide\n";
+#     }
+#     if ($newy + $newh > $fully) {
+#         $newh = $fully - $newy - 1;
+#         print "WARNING: too high\n";
+#     }
+#     
+    my $vznewx = "+${newx}";
+    my $vznewy = "+${newy}";
+    my $important = "";
     if ($newx < 0) {
-        $newx = 0;
+        $vznewx = "${newx}";
+        $important = "\\!";
     }
     if ($newy < 0) {
-        $newy = 0;
+        $vznewy = "${newy}";
+        $important = "\\!";
     }
+    my $geometry = "${neww}x${newh}${vznewx}${vznewy}${important}";
 
-    if ($newx + $neww > $fullx) {
-        $neww = $fullx - $newx - 1;
-        print "WARNING: too wide\n";
-    }
-    if ($newy + $newh > $fully) {
-        $newh = $fully - $newy - 1;
-        print "WARNING: too high\n";
-    }
-    
-    my $geometry = "${neww}x${newh}+${newx}+${newy}";
-
-    my $command = "convert $source -crop $geometry +repage $outfile";
+    my $command = "convert $source -crop $geometry -background transparent -flatten +repage $outfile";
     print $command . "\n";
     system($command);
     my $error = errorAdaption($?);

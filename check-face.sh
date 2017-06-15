@@ -3,7 +3,7 @@
 # set -x
 
 echo "Search for all png files..."
-PICS=$(find bigger -maxdepth 1 -iname '*.png')
+PICS=$(find new-profiles -maxdepth 2 -iname '*.png')
 
 mkdir -p check-face
 CHECKFILE=check-face/check-face.txt
