@@ -1,37 +1,3 @@
-# new-profiles/Beraterbilder/boesebeck-juergen_l.png GEOM 5184 3456 FACE 2555 1061 385 385
-# new-profiles/Beraterbilder/perini-siegfried_l.png GEOM 3543 2362 FACE 1599 522 644 644
-# new-profiles/Beraterbilder/biegel-dirk_l.png NO-FACE fail with error: 2
-# new-profiles/Beraterbilder/ferchow-carola_l.png NO-FACE fail with error: 2
-# new-profiles/Beraterbilder/eichstaedter-max_l.png NO-FACE fail with error: 2
-# new-profiles/Beraterbilder/erens-daniel_l.png NO-FACE fail with error: 2
-# new-profiles/Beraterbilder/finke-clemens_l.png NO-FACE fail with error: 2
-# new-profiles/Beraterbilder/fischer-alexandra_l.png NO-FACE fail with error: 2
-# new-profiles/Beraterbilder/fischer-michael_l.png NO-FACE fail with error: 2
-# new-profiles/Beraterbilder/freund-rene_l.png NO-FACE fail with error: 2
-# new-profiles/Beraterbilder/glismann-uwe_l.png NO-FACE fail with error: 2
-# new-profiles/Beraterbilder/heins-michael_l.png NO-FACE fail with error: 2
-# new-profiles/Beraterbilder/kiessling-barbara_l.png NO-FACE fail with error: 2
-# new-profiles/Beraterbilder/klemens-markus_l.png NO-FACE fail with error: 2
-# new-profiles/Beraterbilder/kliche-gerda-maria_l.png NO-FACE fail with error: 2
-# new-profiles/Beraterbilder/kotte-ralf_l.png NO-FACE fail with error: 2
-# new-profiles/Beraterbilder/labsch-frank_l.png NO-FACE fail with error: 2
-# new-profiles/Beraterbilder/leismann-ulrich_l.png NO-FACE fail with error: 2
-# new-profiles/Beraterbilder/meier-alexander_l.png NO-FACE fail with error: 2
-# new-profiles/Beraterbilder/meyer-bettina_l.png NO-FACE fail with error: 2
-# new-profiles/Beraterbilder/muenstermann-michelle_l.png NO-FACE fail with error: 2
-# new-profiles/Beraterbilder/petry-burkhard_l.png NO-FACE fail with error: 2
-# new-profiles/Beraterbilder/reichle-joachim_l.png NO-FACE fail with error: 2
-# new-profiles/Beraterbilder/schaefer-dieter_l.png NO-FACE fail with error: 2
-# new-profiles/Beraterbilder/schneider-dennis_l.png NO-FACE fail with error: 2
-# new-profiles/Beraterbilder/schuette-ulrike_l.png NO-FACE fail with error: 2
-# new-profiles/Beraterbilder/steinhilber-joerg_l.png NO-FACE fail with error: 2
-# new-profiles/Beraterbilder/strack-heiko_l.png NO-FACE fail with error: 2
-# new-profiles/Beraterbilder/wagner-roland_l.png NO-FACE fail with error: 2
-# new-profiles/Beraterbilder/wilhelm-karl-heinz_l.png NO-FACE fail with error: 2
-# new-profiles/Beraterbilder/wolf-susanne_l.png NO-FACE fail with error: 2
-# new-profiles/Beraterbilder/wolff-karl_l.png NO-FACE fail with error: 2
-# new-profiles/Beraterbilder/yaprak-ozan_l.png NO-FACE fail with error: 2
-# new-profiles/Beraterbilder/zymbala-dirk_l.png NO-FACE fail with error: 2
 new-profiles/Beraterbilder/abendschein-manfred_l.png GEOM 2592 3888 FACE 1042 604 834 834
 new-profiles/Beraterbilder/abrat-andreas_l.png GEOM 5760 3840 FACE 2476 870 961 961
 new-profiles/Beraterbilder/ahler-anne_l.png GEOM 4429 2953 FACE 1729 657 1314 1314
@@ -642,8 +608,42 @@ new-profiles/Beraterbilder/papprott-tim_l.png GEOM 3264 2176 FACE 1222 466 914 9
 new-profiles/Beraterbilder/jeyendran-aperamey_l.png GEOM 6016 4016 FACE 2611 763 823 823
 new-profiles/Beraterbilder/elz-nancy_l.png GEOM 3744 5616 FACE 1561 785 1039 1039
 new-profiles/Beraterbilder/bahr-guenter_l.png GEOM 4000 2667 FACE 1679 436 754 754
-new-profiles/Beraterbilder/schomacker-bernd_l.png GEOM 2307 1695 FACE 897 278 580 580 513 474 135 135
+new-profiles/Beraterbilder/schomacker-bernd_l.png GEOM 2307 1695 FACE 897 278 580 580
 new-profiles/Beraterbilder/hell-joerg_l.png GEOM 3307 2362 FACE 1447 350 613 613
 new-profiles/Beraterbilder/weimer-alexander_l.png GEOM 6016 4016 FACE 2152 407 827 827
 new-profiles/Beraterbilder/gertler-thomas_l.png GEOM 5184 3456 FACE 2028 1020 1085 1085
-new-profiles/Beraterbilder/greiffenhagen-kay_l.png GEOM 4724 3543 FACE 1703 564 1369 1369 2451 2219 378 378
+new-profiles/Beraterbilder/greiffenhagen-kay_l.png GEOM 4724 3543 FACE 1703 564 1369 1369
+# new-profiles/Beraterbilder/boesebeck-juergen_l.png GEOM 5184 3456 FACE 2555 1061 385 385
+# new-profiles/Beraterbilder/perini-siegfried_l.png GEOM 3543 2362 FACE 1599 522 644 644
+# new-profiles/Beraterbilder/biegel-dirk_l.png NO-FACE fail with error: 2
+# new-profiles/Beraterbilder/ferchow-carola_l.png NO-FACE fail with error: 2
+# new-profiles/Beraterbilder/eichstaedter-max_l.png NO-FACE fail with error: 2
+# new-profiles/Beraterbilder/erens-daniel_l.png NO-FACE fail with error: 2
+# new-profiles/Beraterbilder/finke-clemens_l.png NO-FACE fail with error: 2
+# new-profiles/Beraterbilder/fischer-alexandra_l.png NO-FACE fail with error: 2
+# new-profiles/Beraterbilder/fischer-michael_l.png NO-FACE fail with error: 2
+# new-profiles/Beraterbilder/freund-rene_l.png NO-FACE fail with error: 2
+# new-profiles/Beraterbilder/glismann-uwe_l.png NO-FACE fail with error: 2
+# new-profiles/Beraterbilder/heins-michael_l.png NO-FACE fail with error: 2
+# new-profiles/Beraterbilder/kiessling-barbara_l.png NO-FACE fail with error: 2
+# new-profiles/Beraterbilder/klemens-markus_l.png NO-FACE fail with error: 2
+# new-profiles/Beraterbilder/kliche-gerda-maria_l.png NO-FACE fail with error: 2
+# new-profiles/Beraterbilder/kotte-ralf_l.png NO-FACE fail with error: 2
+# new-profiles/Beraterbilder/labsch-frank_l.png NO-FACE fail with error: 2
+# new-profiles/Beraterbilder/leismann-ulrich_l.png NO-FACE fail with error: 2
+# new-profiles/Beraterbilder/meier-alexander_l.png NO-FACE fail with error: 2
+# new-profiles/Beraterbilder/meyer-bettina_l.png NO-FACE fail with error: 2
+# new-profiles/Beraterbilder/muenstermann-michelle_l.png NO-FACE fail with error: 2
+# new-profiles/Beraterbilder/petry-burkhard_l.png NO-FACE fail with error: 2
+# new-profiles/Beraterbilder/reichle-joachim_l.png NO-FACE fail with error: 2
+# new-profiles/Beraterbilder/schaefer-dieter_l.png NO-FACE fail with error: 2
+# new-profiles/Beraterbilder/schneider-dennis_l.png NO-FACE fail with error: 2
+# new-profiles/Beraterbilder/schuette-ulrike_l.png NO-FACE fail with error: 2
+# new-profiles/Beraterbilder/steinhilber-joerg_l.png NO-FACE fail with error: 2
+# new-profiles/Beraterbilder/strack-heiko_l.png NO-FACE fail with error: 2
+# new-profiles/Beraterbilder/wagner-roland_l.png NO-FACE fail with error: 2
+# new-profiles/Beraterbilder/wilhelm-karl-heinz_l.png NO-FACE fail with error: 2
+# new-profiles/Beraterbilder/wolf-susanne_l.png NO-FACE fail with error: 2
+# new-profiles/Beraterbilder/wolff-karl_l.png NO-FACE fail with error: 2
+# new-profiles/Beraterbilder/yaprak-ozan_l.png NO-FACE fail with error: 2
+# new-profiles/Beraterbilder/zymbala-dirk_l.png NO-FACE fail with error: 2
