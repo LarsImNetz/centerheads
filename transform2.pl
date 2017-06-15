@@ -91,20 +91,31 @@ sub createImage($$$$$$$) {
     my $fullx = shift;
     my $fully = shift;
     
-    my $hhalf = $h / 2;
-    print "hhalf:=$hhalf\n";
-    my $h1 = $hhalf + 0.2 * $hhalf + 0.2 * $hhalf;
-    print "h1:=$h1\n";
-    my $newy = $y + 0.8 * $hhalf - 2 * $h1;
+#     my $hhalf = $h / 2;
+#     print "hhalf:=$hhalf\n";
+#     my $h1 = $hhalf + 0.2 * $hhalf + 0.2 * $hhalf;
+#     print "h1:=$h1\n";
+#     my $newy = $y + 0.8 * $hhalf - 2 * $h1;
+#     print "newy:=$newy\n";
+#     my $newh = int(6 * $h1);
+#     print "newh:=$newh\n";
+# 
+#     my $newx = $x + $hhalf - 3 * $h1;
+#     print "newx:=$newx\n";
+#     my $neww = int(6 * $h1);
+#     print "neww:=$neww\n";
+#
+
+    my $newy = $y - 3/4 * $h;
     print "newy:=$newy\n";
-    my $newh = int(6 * $h1);
+    my $newh = int(2 * 3/4 * $h + $h);
     print "newh:=$newh\n";
-
-    my $newx = $x + $hhalf - 3 * $h1;
+ 
+    my $newx = $x - 3/4 * $h;
     print "newx:=$newx\n";
-    my $neww = int(6 * $h1);
+    my $neww = $newh;
     print "neww:=$neww\n";
-
+    
     $newx = int($newx);
     $newy = int($newy);
     
@@ -127,17 +138,17 @@ sub createImage($$$$$$$) {
     my $vznewx = "+${newx}";
     my $vznewy = "+${newy}";
     my $important = "";
+    $important = "\\!";
+    
     if ($newx < 0) {
         $vznewx = "${newx}";
-        $important = "\\!";
     }
     if ($newy < 0) {
         $vznewy = "${newy}";
-        $important = "\\!";
     }
     my $geometry = "${neww}x${newh}${vznewx}${vznewy}${important}";
 
-    my $command = "convert $source -crop $geometry -background transparent -flatten +repage $outfile";
+    my $command = "convert $source -crop $geometry -background transparent -flatten $outfile";
     print $command . "\n";
     system($command);
     my $error = errorAdaption($?);
