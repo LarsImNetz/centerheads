@@ -25,13 +25,14 @@ if ($help) {
     exit(0);
 }
 
+my $statusFile;
 if ($#ARGV < 0) {
-    print("No parameter to check-file.txt given, must quit\n");
-    exit(1);
+    print("No parameter to check-face.txt given use default\n");
+    $statusFile = "check-face/check-face.txt";
 }
-# print "echo $#ARGV\n";
-
-my $statusFile = $ARGV[0];
+else {
+    $statusFile = $ARGV[0]
+}
 print " statusfile: $statusFile\n";
 
 if ( ! -e "$statusFile" ) {
@@ -106,12 +107,16 @@ sub createImage($$$$$$$) {
 #     print "neww:=$neww\n";
 #
 
-    my $newy = $y - 3/4 * $h;
+    my $sizeOverHead = 5/8 * $h;
+    my $sizeUnderHead = 3/4 * $h;
+    
+    my $newy = $y - $sizeOverHead;
     print "newy:=$newy\n";
-    my $newh = int(2 * 3/4 * $h + $h);
+    my $newh = int($sizeOverHead + $h + $sizeUnderHead);
     print "newh:=$newh\n";
- 
-    my $newx = $x - 3/4 * $h;
+
+    my $sizeLeftFromHead = 3/4 * $h;
+    my $newx = $x - $sizeLeftFromHead;
     print "newx:=$newx\n";
     my $neww = $newh;
     print "neww:=$neww\n";
