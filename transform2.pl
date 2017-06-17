@@ -65,6 +65,10 @@ if (open(FILE, "$statusFile")) {
         my $fw;
         my $fh;
         if ( $values[4] eq "HANDMADE" ) {
+            # Handgemachte Erkennung
+            # Angegeben wird ein Punkt auf dem Nasenruecken und 
+            # ein Punkt links am Ohr, der grob beschreibt wie gross das Gesicht ist
+            # Tip: Ist das Gesicht zu gross, den Punkt etwas weiter nach links legen.
             my $nosex = $values[5];
             my $nosey = $values[6];
             my $noseleft = $values[7];
@@ -75,6 +79,7 @@ if (open(FILE, "$statusFile")) {
             $fh = 2 * $delta;
         }
         elsif ( $values[4] eq "FACE" ) {
+            # Die automatische Erkennung ueber das facedetect Tool
             $fx = $values[5];
             $fy = $values[6];
             $fw = $values[7];
@@ -116,34 +121,15 @@ sub createImage($$$$$$$) {
     my $fullx = shift;
     my $fully = shift;
     
-#     my $hhalf = $h / 2;
-#     print "hhalf:=$hhalf\n";
-#     my $h1 = $hhalf + 0.2 * $hhalf + 0.2 * $hhalf;
-#     print "h1:=$h1\n";
-#     my $newy = $y + 0.8 * $hhalf - 2 * $h1;
-#     print "newy:=$newy\n";
-#     my $newh = int(6 * $h1);
-#     print "newh:=$newh\n";
-# 
-#     my $newx = $x + $hhalf - 3 * $h1;
-#     print "newx:=$newx\n";
-#     my $neww = int(6 * $h1);
-#     print "neww:=$neww\n";
-#
-
     my $sizeOverHead = 5/8 * $h;
     my $sizeUnderHead = 3/4 * $h;
     
     my $newy = $y - $sizeOverHead;
-    print "newy:=$newy\n";
     my $newh = int($sizeOverHead + $h + $sizeUnderHead);
-    print "newh:=$newh\n";
 
     my $sizeLeftFromHead = 3/4 * $h;
     my $newx = $x - $sizeLeftFromHead;
-    print "newx:=$newx\n";
     my $neww = $newh;
-    print "neww:=$neww\n";
     
     $newx = int($newx);
     $newy = int($newy);
@@ -151,25 +137,9 @@ sub createImage($$$$$$$) {
     # Wenn unten etwas fehlt, einfach etwas nach oben schieben
     if ($newy + $newh > $fully) {
         my $deltay = $newy + $newh - $fully;
-        print "deltay:=$deltay";
         $newy = $newy - $deltay;
     }
-#     if ($newx < 0) {
-#         $newx = 0;
-#     }
-#     if ($newy < 0) {
-#         $newy = 0;
-#     }
-# 
-#     if ($newx + $neww > $fullx) {
-#         $neww = $fullx - $newx - 1;
-#         print "WARNING: too wide\n";
-#     }
-#     if ($newy + $newh > $fully) {
-#         $newh = $fully - $newy - 1;
-#         print "WARNING: too high\n";
-#     }
-#     
+
     my $vznewx = "+${newx}";
     my $vznewy = "+${newy}";
     my $important = "";
