@@ -52,7 +52,7 @@ if (open(FILE, "$statusFile")) {
         if ($values[0] eq '#' || $values[0] eq "##") {
             next;
         }
-        my $source = values[0];
+        my $source = $values[0];
         
         print "File: $source size: $values[2] $values[3]\n";
         my $outfile = createOutfile($values[0]);
@@ -60,18 +60,25 @@ if (open(FILE, "$statusFile")) {
             print "Picture already exists.\n";
             next;
         }
-        my $fx = $values[5];
-        my $fy = $values[6];
-        my $fw = $values[7];
-        my $fh = $values[8];
+        my $fx;
+        my $fy;
+        my $fw;
+        my $fh;
         if ( $values[4] eq "HANDMADE" ) {
-            my $fx = $values[5];
-            my $fy = $values[6];
-            my $fw = $values[7];
-            my $fh = $values[8];
+            my $nosex = $values[5];
+            my $nosey = $values[6];
+            my $noseleft = $values[7];
+            my $delta = $nosex - $noseleft;
+            $fx = $nosex - $delta;
+            $fy = $nosey - $delta;
+            $fw = 2 * $delta;
+            $fh = 2 * $delta;
         }
         elsif ( $values[4] eq "FACE" ) {
-            
+            $fx = $values[5];
+            $fy = $values[6];
+            $fw = $values[7];
+            $fh = $values[8];
         }
         else {
             print "WARNING: unknown line: $line\n";
