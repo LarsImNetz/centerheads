@@ -3,15 +3,21 @@
 # set -x
 
 echo "Search for all png files..."
-PICS=$(find new-profiles -maxdepth 2 -iname '*.png')
+PICS=$(find new-profiles -maxdepth 2 -iname '*.png' | sort)
 
 mkdir -p check-face
 CHECKFILE=check-face/check-face.txt
 
 touch $CHECKFILE
 
+count=10
 for PIC in $PICS; do
     echo "check for face: $PIC"
+
+    count=$(( $count - 1))
+    if [ $count -le 0 ]; then
+        exit 1
+    fi
 
     BASENAME=$(basename $PIC)
     EXTENSION=${BASENAME#*.}
@@ -26,8 +32,8 @@ for PIC in $PICS; do
 
         ./facedetect -o check-face/$PNGNAME $PIC
         read x y w h <<< $(./facedetect $PIC)
-        echo "$PIC GEOM $xp $yp FACE $x $y $w $h" >>$CHECKFILE
-    else
-        echo "# $PIC NO-FACE fail with error: $FACE" >>$CHECKFILE
+#        echo "$PIC GEOM $xp $yp FACE $x $y $w $h" >>$CHECKFILE
+#    else
+#        echo "# $PIC NO-FACE fail with error: $FACE" >>$CHECKFILE
     fi
 done
