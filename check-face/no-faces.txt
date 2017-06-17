@@ -1,0 +1,34 @@
+new-profiles/Beraterbilder/boesebeck-juergen_l.png GEOM 5184 3456 FACE 2555 1061 385 385
+new-profiles/Beraterbilder/perini-siegfried_l.png GEOM 3543 2362 FACE 1599 522 644 644
+# new-profiles/Beraterbilder/biegel-dirk_l.png GEOM 4724 3543 HANDMADE
+# new-profiles/Beraterbilder/ferchow-carola_l.png GEOM 4288 2848 HANDMADE
+# new-profiles/Beraterbilder/eichstaedter-max_l.png GEOM 6000 4485 HANDMADE
+# new-profiles/Beraterbilder/erens-daniel_l.png GEOM 6016 4016 HANDMADE
+# new-profiles/Beraterbilder/finke-clemens_l.png GEOM 5184 3456 HANDMADE
+# new-profiles/Beraterbilder/fischer-alexandra_l.png GEOM 4724 3150 HANDMADE
+# new-profiles/Beraterbilder/fischer-michael_l.png GEOM 5184 3456 HANDMADE
+# new-profiles/Beraterbilder/freund-rene_l.png GEOM 3000 2167 HANDMADE
+# new-profiles/Beraterbilder/glismann-uwe_l.png GEOM 5760 3840 HANDMADE
+# new-profiles/Beraterbilder/heins-michael_l.png GEOM 4276 3015 HANDMADE
+# new-profiles/Beraterbilder/kiessling-barbara_l.png GEOM 5616 3744 HANDMADE
+# new-profiles/Beraterbilder/klemens-markus_l.png GEOM 2048 1365 HANDMADE
+# new-profiles/Beraterbilder/kliche-gerda-maria_l.png GEOM 1000 667 HANDMADE
+# new-profiles/Beraterbilder/kotte-ralf_l.png GEOM 3872 2592 HANDMADE
+# new-profiles/Beraterbilder/labsch-frank_l.png GEOM 3960 2640 HANDMADE
+# new-profiles/Beraterbilder/leismann-ulrich_l.png GEOM 6000 4000 HANDMADE
+# new-profiles/Beraterbilder/meier-alexander_l.png GEOM 3279 3764 HANDMADE
+# new-profiles/Beraterbilder/meyer-bettina_l.png GEOM 3840 5760 HANDMADE
+# new-profiles/Beraterbilder/muenstermann-michelle_l.png GEOM 5172 3450 HANDMADE
+# new-profiles/Beraterbilder/petry-burkhard_l.png GEOM 2880 1920 HANDMADE
+# new-profiles/Beraterbilder/reichle-joachim_l.png GEOM 4357 3184 HANDMADE
+# new-profiles/Beraterbilder/schaefer-dieter_l.png GEOM 1535 1025 HANDMADE
+# new-profiles/Beraterbilder/schneider-dennis_l.png GEOM 4724 3154 HANDMADE
+# new-profiles/Beraterbilder/schuette-ulrike_l.png GEOM 3780 2521 HANDMADE
+# new-profiles/Beraterbilder/steinhilber-joerg_l.png GEOM 1000 667 HANDMADE
+# new-profiles/Beraterbilder/strack-heiko_l.png GEOM 2667 4000 HANDMADE
+# new-profiles/Beraterbilder/wagner-roland_l.png GEOM 4256 2832 HANDMADE
+# new-profiles/Beraterbilder/wilhelm-karl-heinz_l.png GEOM 2592 1728 HANDMADE
+# new-profiles/Beraterbilder/wolf-susanne_l.png GEOM 4658 3105 HANDMADE
+# new-profiles/Beraterbilder/wolff-karl_l.png GEOM 2126 1535 HANDMADE
+# new-profiles/Beraterbilder/yaprak-ozan_l.png GEOM 4288 3000 HANDMADE
+# new-profiles/Beraterbilder/zymbala-dirk_l.png GEOM 4000 2670 HANDMADE
