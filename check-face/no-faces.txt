@@ -2,7 +2,6 @@ new-profiles/Beraterbilder/wolf-susanne_l.png GEOM 4658 3105 HANDMADE 2404 856 2
 new-profiles/Beraterbilder/wolff-karl_l.png GEOM 2126 1535 HANDMADE 976 556 744
 new-profiles/Beraterbilder/steinhilber-joerg_l.png GEOM 1000 667 HANDMADE 574 409 474
 new-profiles/Beraterbilder/schuette-ulrike_l.png GEOM 3780 2521 HANDMADE 1884 876 1540
-
 new-profiles/Beraterbilder/biegel-dirk_l.png GEOM 4724 3543 HANDMADE 2359 1171 1826
 new-profiles/Beraterbilder/boesebeck-juergen_l.png GEOM 5184 3456 HANDMADE 2722 1039 2205
 new-profiles/Beraterbilder/eichstaedter-max_l.png GEOM 6000 4485 HANDMADE 2048 1632 1696
@@ -33,3 +32,5 @@ new-profiles/Beraterbilder/wagner-roland_l.png GEOM 4256 2832 HANDMADE 2120 1212
 new-profiles/Beraterbilder/wilhelm-karl-heinz_l.png GEOM 2592 1728 HANDMADE 1335 564 1134
 new-profiles/Beraterbilder/yaprak-ozan_l.png GEOM 4288 3000 HANDMADE 2224 1096 1720
 new-profiles/Beraterbilder/zymbala-dirk_l.png GEOM 4000 2670 HANDMADE 2100 764 1816
+#
+# new-profiles/Beraterbilder/abrat-andreas_l.png GEOM 5760 3840 HANDMADE 2980 1365 2525
