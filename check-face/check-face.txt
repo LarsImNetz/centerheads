@@ -1,3 +1,4 @@
+# zwecks Tests zuerst laden
 new-profiles/Beraterbilder/kollhoff-stefanie_l.png GEOM 4777 3187 FACE 1553 540 1633 1633
 new-profiles/Beraterbilder/ahler-anne_l.png GEOM 4429 2953 FACE 1729 657 1314 1314
 new-profiles/Beraterbilder/coertuek-mustafa_l.png GEOM 4256 2832 FACE 1285 752 1462 1462
@@ -83,7 +84,7 @@ new-profiles/Beraterbilder/denecke-susan-_l.png GEOM 6000 4000 FACE 1983 763 886
 new-profiles/Beraterbilder/deppisch-thomas_l.png GEOM 5184 3456 FACE 2224 654 1079 1079
 new-profiles/Beraterbilder/deutsch-sascha_l.png GEOM 3872 2592 FACE 1502 633 968 968
 new-profiles/Beraterbilder/dezius-constantin_l.png GEOM 2000 1333 FACE 853 291 395 395
-new-profiles/Beraterbilder/di-novi-giovanni_l.png GEOM 6000 4000 FACE 2444 799 1080 1080
+new-profiles/Beraterbilder/dinovi-giovanni_l.png GEOM 6000 4000 FACE 2444 799 1080 1080
 new-profiles/Beraterbilder/dieckmann-uwe_l.png GEOM 3872 2592 FACE 1663 549 943 943
 new-profiles/Beraterbilder/diestelmann-michael_l.png GEOM 5184 3456 FACE 2215 841 1116 1116
 new-profiles/Beraterbilder/dietze-jan_l.png GEOM 3840 2560 FACE 1577 572 657 657
@@ -162,7 +163,7 @@ new-profiles/Beraterbilder/grohn-markus_l.png GEOM 5184 3456 FACE 2259 477 1052 
 new-profiles/Beraterbilder/grunewald-christian_l.png GEOM 3888 2592 FACE 1706 603 754 754
 new-profiles/Beraterbilder/grunwald-gunther_l.png GEOM 3681 2629 FACE 1203 519 1151 1151
 new-profiles/Beraterbilder/grunwald_daniel_l.png GEOM 500 371 FACE 218 86 108 108
-new-profiles/Beraterbilder/guenther-koch_l.png GEOM 5184 3456 FACE 2150 684 1210 1210
+new-profiles/Beraterbilder/koch-guenter_l.png GEOM 5184 3456 FACE 2150 684 1210 1210
 new-profiles/Beraterbilder/guenther-sven_l.png GEOM 4928 3280 FACE 2071 528 1356 1356
 new-profiles/Beraterbilder/haase-marco_l.png GEOM 1772 1181 FACE 668 172 419 419
 new-profiles/Beraterbilder/hadamczik-frauke_l.png GEOM 4928 3264 FACE 2160 738 908 908
@@ -537,7 +538,7 @@ new-profiles/Beraterbilder/venhofen-josha_l.png GEOM 4129 2480 FACE 1754 536 817
 new-profiles/Beraterbilder/voelkner-bianka_l.png GEOM 3872 2579 FACE 1622 479 725 725
 new-profiles/Beraterbilder/vogel-michael_l.png GEOM 3872 2592 FACE 1537 519 794 794
 new-profiles/Beraterbilder/vogt-oliver_l.png GEOM 3000 2000 FACE 1405 232 517 517
-new-profiles/Beraterbilder/volker-reichert_l.png GEOM 3774 2517 FACE 1358 378 901 901
+new-profiles/Beraterbilder/reichert-volker_l.png GEOM 3774 2517 FACE 1358 378 901 901
 new-profiles/Beraterbilder/vorbeck-christian_l.png GEOM 4256 2832 FACE 1606 410 1328 1328
 new-profiles/Beraterbilder/vorbeck-viviane_l.png GEOM 4256 2832 FACE 1143 640 1117 1117
 new-profiles/Beraterbilder/wagner-andreas_l.png GEOM 5184 3456 FACE 2207 677 1127 1127
@@ -614,37 +615,56 @@ new-profiles/Beraterbilder/hell-joerg_l.png GEOM 3307 2362 FACE 1447 350 613 613
 new-profiles/Beraterbilder/weimer-alexander_l.png GEOM 6016 4016 FACE 2152 407 827 827
 new-profiles/Beraterbilder/gertler-thomas_l.png GEOM 5184 3456 FACE 2028 1020 1085 1085
 new-profiles/Beraterbilder/greiffenhagen-kay_l.png GEOM 4724 3543 FACE 1703 564 1369 1369
-# new-profiles/Beraterbilder/boesebeck-juergen_l.png GEOM 5184 3456 FACE 2555 1061 385 385
-# new-profiles/Beraterbilder/perini-siegfried_l.png GEOM 3543 2362 FACE 1599 522 644 644
-# new-profiles/Beraterbilder/biegel-dirk_l.png NO-FACE fail with error: 2
-# new-profiles/Beraterbilder/ferchow-carola_l.png NO-FACE fail with error: 2
-# new-profiles/Beraterbilder/eichstaedter-max_l.png NO-FACE fail with error: 2
-# new-profiles/Beraterbilder/erens-daniel_l.png NO-FACE fail with error: 2
-# new-profiles/Beraterbilder/finke-clemens_l.png NO-FACE fail with error: 2
-# new-profiles/Beraterbilder/fischer-alexandra_l.png NO-FACE fail with error: 2
-# new-profiles/Beraterbilder/fischer-michael_l.png NO-FACE fail with error: 2
-# new-profiles/Beraterbilder/freund-rene_l.png NO-FACE fail with error: 2
-# new-profiles/Beraterbilder/glismann-uwe_l.png NO-FACE fail with error: 2
-# new-profiles/Beraterbilder/heins-michael_l.png NO-FACE fail with error: 2
-# new-profiles/Beraterbilder/kiessling-barbara_l.png NO-FACE fail with error: 2
-# new-profiles/Beraterbilder/klemens-markus_l.png NO-FACE fail with error: 2
-# new-profiles/Beraterbilder/kliche-gerda-maria_l.png NO-FACE fail with error: 2
-# new-profiles/Beraterbilder/kotte-ralf_l.png NO-FACE fail with error: 2
-# new-profiles/Beraterbilder/labsch-frank_l.png NO-FACE fail with error: 2
-# new-profiles/Beraterbilder/leismann-ulrich_l.png NO-FACE fail with error: 2
-# new-profiles/Beraterbilder/meier-alexander_l.png NO-FACE fail with error: 2
-# new-profiles/Beraterbilder/meyer-bettina_l.png NO-FACE fail with error: 2
-# new-profiles/Beraterbilder/muenstermann-michelle_l.png NO-FACE fail with error: 2
-# new-profiles/Beraterbilder/petry-burkhard_l.png NO-FACE fail with error: 2
-# new-profiles/Beraterbilder/reichle-joachim_l.png NO-FACE fail with error: 2
-# new-profiles/Beraterbilder/schaefer-dieter_l.png NO-FACE fail with error: 2
-# new-profiles/Beraterbilder/schneider-dennis_l.png NO-FACE fail with error: 2
-# new-profiles/Beraterbilder/schuette-ulrike_l.png NO-FACE fail with error: 2
-# new-profiles/Beraterbilder/steinhilber-joerg_l.png NO-FACE fail with error: 2
-# new-profiles/Beraterbilder/strack-heiko_l.png NO-FACE fail with error: 2
-# new-profiles/Beraterbilder/wagner-roland_l.png NO-FACE fail with error: 2
-# new-profiles/Beraterbilder/wilhelm-karl-heinz_l.png NO-FACE fail with error: 2
-# new-profiles/Beraterbilder/wolf-susanne_l.png NO-FACE fail with error: 2
-# new-profiles/Beraterbilder/wolff-karl_l.png NO-FACE fail with error: 2
-# new-profiles/Beraterbilder/yaprak-ozan_l.png NO-FACE fail with error: 2
-# new-profiles/Beraterbilder/zymbala-dirk_l.png NO-FACE fail with error: 2
+#
+# Bilder die nicht von facedetect erkannt wurden 20170617
+new-profiles/Beraterbilder/wolf-susanne_l.png GEOM 4658 3105 HANDMADE 2404 856 2080
+new-profiles/Beraterbilder/wolff-karl_l.png GEOM 2126 1535 HANDMADE 976 556 744
+new-profiles/Beraterbilder/steinhilber-joerg_l.png GEOM 1000 667 HANDMADE 574 409 474
+new-profiles/Beraterbilder/schuette-ulrike_l.png GEOM 3780 2521 HANDMADE 1884 876 1540
+new-profiles/Beraterbilder/biegel-dirk_l.png GEOM 4724 3543 HANDMADE 2359 1171 1826
+new-profiles/Beraterbilder/boesebeck-juergen_l.png GEOM 5184 3456 HANDMADE 2722 1039 2205
+new-profiles/Beraterbilder/eichstaedter-max_l.png GEOM 6000 4485 HANDMADE 2048 1632 1696
+new-profiles/Beraterbilder/erens-daniel_l.png GEOM 6016 4016 HANDMADE 2849 1507 2321
+new-profiles/Beraterbilder/ferchow-carola_l.png GEOM 4288 2848 HANDMADE 2136 1248 1592
+new-profiles/Beraterbilder/finke-clemens_l.png GEOM 5184 3456 HANDMADE 2596 1166 2095
+new-profiles/Beraterbilder/fischer-alexandra_l.png GEOM 4724 3150 HANDMADE 2370 918 2057
+new-profiles/Beraterbilder/fischer-michael_l.png GEOM 5184 3456 HANDMADE 2799 1237 2194 
+new-profiles/Beraterbilder/freund-rene_l.png GEOM 3000 2167 HANDMADE 1659 609 1389
+new-profiles/Beraterbilder/glismann-uwe_l.png GEOM 5760 3840 HANDMADE 2871 1116 2425
+new-profiles/Beraterbilder/heins-michael_l.png GEOM 4276 3015 HANDMADE 2196 764 1864
+new-profiles/Beraterbilder/kiessling-barbara_l.png GEOM 5616 3744 HANDMADE 2964 1138 2414
+new-profiles/Beraterbilder/klemens-markus_l.png GEOM 2048 1365 HANDMADE 1054 492 916
+new-profiles/Beraterbilder/kliche-gerda-maria_l.png GEOM 1000 667 HANDMADE 496 265 431
+new-profiles/Beraterbilder/kotte-ralf_l.png GEOM 3872 2592 HANDMADE 1948 1008 1576
+new-profiles/Beraterbilder/labsch-frank_l.png GEOM 3960 2640 HANDMADE 1740 972 1432
+new-profiles/Beraterbilder/leismann-ulrich_l.png GEOM 6000 4000 HANDMADE 2970 1149 2447
+new-profiles/Beraterbilder/meier-alexander_l.png GEOM 3279 3764 HANDMADE 1870 1034 1276
+new-profiles/Beraterbilder/meyer-bettina_l.png GEOM 3840 5760 HANDMADE 2096 1688 1448
+new-profiles/Beraterbilder/muenstermann-michelle_l.png GEOM 5172 3450 HANDMADE 2403 1127 2024
+new-profiles/Beraterbilder/perini-siegfried_l.png GEOM 3543 2362 HANDMADE 1740 852 1440 
+new-profiles/Beraterbilder/petry-burkhard_l.png GEOM 2880 1920 HANDMADE 1533 537 1302
+new-profiles/Beraterbilder/reichle-joachim_l.png GEOM 4357 3184 HANDMADE 2211 1193 1699
+new-profiles/Beraterbilder/schaefer-dieter_l.png GEOM 1535 1025 HANDMADE 798 408 595
+new-profiles/Beraterbilder/schneider-dennis_l.png GEOM 4724 3154 HANDMADE 2365 1419 1886
+new-profiles/Beraterbilder/strack-heiko_l.png GEOM 2667 4000 HANDMADE 1452 1309 973
+new-profiles/Beraterbilder/wagner-roland_l.png GEOM 4256 2832 HANDMADE 2120 1212 1564
+new-profiles/Beraterbilder/wilhelm-karl-heinz_l.png GEOM 2592 1728 HANDMADE 1335 564 1134
+new-profiles/Beraterbilder/yaprak-ozan_l.png GEOM 4288 3000 HANDMADE 2224 1096 1720
+new-profiles/Beraterbilder/zymbala-dirk_l.png GEOM 4000 2670 HANDMADE 2100 764 1816
+#
+# Fehlende Bilder 20170620
+new-profiles/Beraterbilder/chirvasuta-ionut_l.png GEOM 4100 5126 HANDMADE 2134 1362 1458 
+new-profiles/Beraterbilder/dinovi-giovanni_l.png GEOM 6000 4000 FACE 2444 799 1080 1080
+new-profiles/Beraterbilder/frobel-jared_l.png GEOM 4104 2736 HANDMADE 1957 1124 1441
+new-profiles/Beraterbilder/guenther-judith_l.png GEOM 4000 2670 HANDMADE 2004 922 1714
+new-profiles/Beraterbilder/haas-juergen_l.png GEOM 5616 3744 HANDMADE 2985 1417 2462
+new-profiles/Beraterbilder/kerski-jan_l.png GEOM 6144 4081 HANDMADE 3100 1527 2444 
+new-profiles/Beraterbilder/koch-guenter_l.png GEOM 5184 3456 FACE 2150 684 1210 1210
+new-profiles/Beraterbilder/reichert-volker_l.png GEOM 3774 2517 FACE 1358 378 901 901
+new-profiles/Beraterbilder/kummer-ulrike_l.png GEOM 2102 1500 HANDMADE 1068 556 820 
+new-profiles/Beraterbilder/luening-oliver_l.png GEOM 5188 3705 HANDMADE 2666 1312 2018
+new-profiles/Beraterbilder/ruoss-dirk_l.png GEOM 2048 1365 HANDMADE 1183 352 1018
+new-profiles/Beraterbilder/schmidt-oliver_l.png GEOM 5616 3744 HANDMADE 2873 1641 2288
+new-profiles/Beraterbilder/schrauder-anna-maria_l.png GEOM 3000 2000 HANDMADE 1543 487 1293
+new-profiles/Beraterbilder/stemme-alena_l.png GEOM 5472 3648 HANDMADE 2985 1664 2363 
+new-profiles/Beraterbilder/winkler-falk_l.png GEOM 6048 4032 HANDMADE 3656 1674 2848
